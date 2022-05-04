@@ -26,3 +26,16 @@ const prod3 = {
 }
 
 console.log(prod3)
+
+
+// --- AULA 2 SOBRE OBJETOS ---
+console.log(typeof Object) // function
+console.log(typeof new Object) // object
+
+const Cliente = function() {} // Cria uma função.
+console.log(typeof Cliente) // function
+console.log(typeof new Cliente) // object
+
+class Produto {}
+console.log(typeof Produto) // function
+console.log(typeof new Produto) // object
