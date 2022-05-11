@@ -2,19 +2,19 @@ const a = 7
 let b = 3
 
 b += a // b = b + a
-console.log(b)
+console.log(b) // 10
 
 b -= 4 // b = b - 4
-console.log(b)
+console.log(b) // (10 - 4) = 6 
 
 b *= 2 // b = b * 2
-console.log(b)
+console.log(b) // (6 * 2) = 12
 
 b /= 2 // b = b / 2
-console.log(b)
+console.log(b) // (12 / 2) = 6
 
 b %= 2 // b = b % 2
-console.log(b)
+console.log(b) // Resto da divisão de 6 / 2 = 0
 
 // OPERADOR DESTRUCTING - AULA 1
 

@@ -13,7 +13,7 @@ console.log(!isAtivo) // o operador de negação retorna o valor contrário.
 // OS VERDADEIROS
 console.log('Os verdadeiros...')
 console.log(!!3)
-console.log(!!-1)
+console.log(!!-1) 
 console.log(!!' ')
 console.log(!!"texto")
 console.log(!![])

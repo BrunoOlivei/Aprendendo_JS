@@ -83,7 +83,7 @@ console.log(num1 === num2)
 
 // OPERADORES TERNÁRIOS
 
-const resultado = nota => nota >= 7 ? 'Aprovado' : 'Reprovado' // primeira parte é a condição >= e se for verdeiro retorna a primeira parte, se for vermelho retorna a segunda parte
+const resultado = nota => nota >= 7 ? 'Aprovado' : 'Reprovado' // primeira parte é a condição >= e se for verdeiro retorna a primeira parte, se for falso retorna a segunda parte
 console.log(resultado(7.1))
 console.log(resultado(6.7))
 
