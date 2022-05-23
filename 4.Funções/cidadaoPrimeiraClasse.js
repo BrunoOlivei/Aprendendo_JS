@@ -78,7 +78,7 @@ console.log(soma("a", "b", "c")) // 0abc
 // AULA 4
 // Parâmetros padrão
 
-// Estratégia 1 para gerar valor padrão
+// Estratégia 1 para gerar valor padrão - Muito utilizada
 
 function soma1(a, b, c){
     a = a || 1
@@ -118,7 +118,7 @@ console.log(soma3(3)) // 5
 console.log(soma3(1, 2, 3)) // 6
 console.log(soma3(0, 0, 0)) // 0
 
-// Estratégia 4
+// Estratégia 4 - Mais segura
 function soma4(a, b, c){
     a = isNaN(a) ? 1 : a
     b = isNaN(b) ? 1 : b
