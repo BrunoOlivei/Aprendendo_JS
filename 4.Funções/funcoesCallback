@@ -1,0 +1,47 @@
+// AULA 1
+
+// Funções callback são funções que são "chamadas" sempre que um evento ocorrer
+
+// Um array contendo nomes de fabricantes de automóveis
+const fabricantes = ["Mercedes", "Audi", "BMW"]
+
+// Uma função que irá imprimir o nome do fabricante e o índice do array
+function imprimir(fabricante, indice) {
+    console.log(`${indice + 1}. ${fabricante}`)
+}
+
+// forEach é uma função que chama outra função, passada como argumento, a cada elemento de uma array
+fabricantes.forEach(imprimir)
+
+// Passando uma arrow function como argumento da função forEach
+fabricantes.forEach(fabricante => console.log(fabricante))
+
+// AULA 2
+
+// Usando callback para percorrer um array de notas e retornar um novo array apenas com as notas abaixo de 7
+const notas = [7.7, 6.5, 5.2, 8.9, 3.6, 7.1, 9.0]
+
+// Sem callback
+
+let notasBaixas = []
+for (let i in notas) {
+    if (notas[i] < 7) {
+        notasBaixas.push(notas[i])
+    }
+}
+
+console.log(notasBaixas)
+
+// Usando callback
+// Utilizando o método filter que retorna um novo array com os elementos conforme a condição passada como argumento
+
+notasBaixas = notas.filter(nota => nota < 7)
+console.log(notasBaixas)
+
+// AULA 3
+
+// Exemplo de callback utilizando o browser
+
+document.getElementsByTagName('body')[0].onclick = function () {
+    console.log("O evento ocorreu")
+}
